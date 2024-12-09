@@ -1,0 +1,27 @@
+<div class="container mt-5 " id="contents">
+    <div class="row">
+        @for( pro of responseData;track pro){
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img [src]="pro.images[0]" class="card-img-top" alt="Card Image"  width="500" height="500">
+          <div class="card-body">
+            <h5 class="card-title">{{ pro.title }}</h5>
+            <p class="card-text">{{ pro.description }}</p>
+        </div>      
+        </div>
+      </div>}
+      @empty {
+           <div>There are no items.</div>
+           }
+    </div>
+  </div>
+
+  
+	<div class="pagination" id="pagination"> 
+		<a href="#" id="prev">Previous</a> 
+		<a href="#" class="page-link" data-page="1">1</a> 
+		<a href="#" class="page-link" data-page="2">2</a> 
+		<a href="#" class="page-link" data-page="3">3</a> 
+		<a href="#" id="next">Next</a> 
+		<p id="page-numbers"> </p> 
+	</div>
