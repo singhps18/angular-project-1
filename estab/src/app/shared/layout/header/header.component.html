@@ -1,48 +1,68 @@
 
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container header-menu">
-      <a class="navbar-brand brand me-2" href="#">MY Dream</a>
+<nav class="navbar navbar-expand-lg bg-dark text-white">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown " aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="">Order B</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="/about">All Orders A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="/seller/product">Products S</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="/admin/product">All Products A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="/admin/user">Users A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active  text-white" routerLink="/contact-us">Contact Us</a>
+        </li>
+      </ul>
       
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active font" aria-current="page" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font" href="/product">Brands</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font" href="#">Luxe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font" href="#">Nykaa Fashion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font"  href="#">Beauty Advice</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          
-          <button class=" btn btns " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">logIN</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  
-  
-  
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <app-loging></app-loging>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link  text-white" routerLink="/sign-in">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" routerLink="/sign-up">Sign Up</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link sim-pointer  text-white" routerLink="/my-profile">My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sim-pointer  text-white" >Log Out</a>
+        </li>
+      </ul>
+      
     </div>
   </div>
-  
-  
-  
-  
-  
+</nav>

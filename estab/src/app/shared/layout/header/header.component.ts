@@ -1,12 +1,29 @@
-import { Component } from '@angular/core';
-import { LogingComponent } from "../../../loging/loging.component";
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Route, RouterLink } from '@angular/router';
+import { Router } from 'express';
 
 @Component({
   selector: 'app-header',
-  imports: [LogingComponent],
+  imports: [CommonModule,RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent  {
+
+  // logIN:boolean=false;
+  // langauge:string='english'
+  // userRole!:string;
+  // constructor(
+  //   private routes:Router
+  // ){
+
+  // }
+  // ngOnInit(): void {
+    
+  // }
+
+
+
 
 }
